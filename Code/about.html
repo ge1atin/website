@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>~/index</title>
+  <title>~/about</title>
   <style>
     body {
       margin: 0;
@@ -67,25 +67,6 @@
       color: rgb(8, 138, 218);
     }
 
-    .link {
-      text-decoration: none;
-      color: rgb(0, 170, 255);
-    }
-
-    .link:visited {
-      color: rgb(0, 170, 255);
-    }
-
-    .link:hover {
-      text-decoration: underline;
-      color: rgb(27, 213, 255);
-    }
-
-    .link:active {
-      text-decoration: underline;
-      color: rgb(8, 138, 218);
-    }
-
     .cursor {
       display: inline-block;
       width: 0.6em;
@@ -108,48 +89,32 @@
     style="position: absolute; bottom:5px; right: 10%; height: 70px; image-rendering: pixelated;"
     onclick="starwalkerClick();">
   <div class="container">
-    <img src="battle.webp" alt="Kris act" id="act" onclick="splat();" style="image-rendering: pixelated;">
+    <img src="act.webp" alt="Kris act" id="act" style="image-rendering: pixelated;">
 
     <div class="text">
-      <span>kris@vx23:~/index$</span><div class="cursor"></div>
+      <span>kris@vx23:~/about$</span><div class="cursor"></div>
       <br>
-      <i>rookie coder, sometimes artist, mild procrastinator</i>
+      <i>Kris Hasko ~ he/him</i>
       <br><br>
-      hi im kris :) im a compsci student at unsw
+      unusually enthusiastic about <b>oop</b> and <b>databases</b> :3
       <br>
-      i like to code, draw, and play on my computer!
+      unsw riot games society executive
+      <br>
+      <br>
+      riotsoc media director ~ 2024 - 2025
+      <br>
+      riotsoc vice president of marketing ~ 2025 - 2026
       <br><br>
       <div style="text-align: left;">
-        <a href="about.html">about</a>
-        <!-- <span class="link" onclick="transitionToPage('about.html')">about</span> -->
-        ⋆˙˖✧ <a href="https://github.com/ge1atin">github</a>
+        -> <a href="index.html">index</a>
       </div>
     </div>
   </div>
 
 <script>
 function starwalkerClick() {
-  alert("These Homepages are Pissing me off...\nI'm the original    Starwalker");
+  alert("These Portfolios are Pissing me off...\nI'm the original    Starwalker");
 }
-
-function splat() {
-  if (document.getElementById('act').src.includes("battle")) {
-    document.getElementById('act').src='splat.png';
-  } else {
-    document.getElementById('act').src='battle.webp';
-  }
-}
-
-window.transitionToPage = function(href) {
-    document.querySelector('body').style.opacity = 0
-    setTimeout(function() {
-        window.location.href = href
-    }, 500)
-}
-
-document.addEventListener('DOMContentLoaded', function(event) {
-    document.querySelector('body').style.opacity = 1
-})
 </script>
 
 </body>
