@@ -1,52 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-a:link {
-  text-decoration: none;
-  color: rgb(0, 170, 255);
-}
+  <meta charset="UTF-8">
+  <title>~/homepage</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: rgb(150, 211, 249);
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-a:visited {
-  text-decoration: none;
-  color: rgb(0, 170, 255);
-}
+    .container {
+      display: flex;
+      border: 1px solid #40528a;
+      background-color: white;
+      padding: 2rem;
+      max-width: 800px;
+      gap: 1.5rem;
+      box-sizing: border-box;
+    }
 
-a:hover {
-  text-decoration: underline;
-  color: rgb(27, 213, 255);
-}
+    .container img {
+      height: auto;
+      width: auto;
+      max-width: 200px;
+      max-height: 200px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
 
-a:active {
-  text-decoration: underline;
-  color: rgb(8, 138, 218);
-}
-</style>
+    .text {
+      color: gray;
+    }
+
+    .text span {
+      font-size: 1.2em;
+    }
+
+    .text i {
+      font-size: 1em;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(0, 170, 255);
+    }
+
+    a:visited {
+      color: rgb(0, 170, 255);
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: rgb(27, 213, 255);
+    }
+
+    a:active {
+      text-decoration: underline;
+      color: rgb(8, 138, 218);
+    }
+  </style>
 </head>
+<body>
+  <img src="original_starwalker.png"
+    style="position: absolute; bottom:5px; right: 10%; height: 70px"
+    onclick="starwalkerClick();">
+  <div class="container">
+    <img src="act.webp" alt="Kris act">
 
-    <div style="
-        display: flex;
-        flex-wrap: nowrap;
-        border-style: solid;
-        flex: 10;
-        margin: 20%;
-        margin-right: 20%;
-        margin-left: 20%;
-        padding:5%;
-    ">
-        <img src="act.webp">
-
-        <div style ="
-            color: gray;
-        ">
-            <span style="font-size: 120%;">kris@vx23:~/homepage$</span>
-            <br>
-            <i style="font-size: 100%;">rookie coder, chronic gamer, mild procrastinator</i>
-            <br>
-            <br>
-            personal websites are unimportant
-            <br>
-            and im bad at web development
-            <br>
-            <br>
-            <a href="https://github.com/ge1atin">github</src>
+    <div class="text">
+      <span>kris@vx23:~/homepage$ . ݁₊ ⊹ . ݁˖ . ݁</span>
+      <br>
+      <i>rookie coder, chronic gamer, mild procrastinator</i>
+      <br><br>
+      hi im kris :) im a compsci student at unsw
+      <br>
+      ...
+      <br><br>
+      <div style="text-align: left;">
+        <a href="https://github.com/ge1atin">about</a>
+        ⊹₊ ⋆ <a href="https://github.com/ge1atin">projects</a>
+        ⋆˙˖✧ <a href="https://github.com/ge1atin">github</a>
+      </div>
     </div>
-</div>
+  </div>
+
+<script>
+function starwalkerClick() {
+  alert("These Websites are Pissing me off...\nI'm the original    Starwalker");
+}
+</script>
+
+</body>
+</html>

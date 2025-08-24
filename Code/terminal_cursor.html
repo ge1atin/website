@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Terminal Cursor Example</title>
+  <style>
+    body {
+      background: #111;
+      color: #ddd;
+      font-family: monospace;
+      padding: 2rem;
+    }
+
+    .terminal-line {
+      display: inline-block;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 1.2em;
+      background: #ddd;
+      margin-left: 2px;
+      animation: blink 1s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal-line">
+    kris@vx23:~/homepage$<span class="cursor"></span>
+  </div>
+</body>
+</html>
