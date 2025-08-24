@@ -64,23 +64,39 @@
       text-decoration: underline;
       color: rgb(8, 138, 218);
     }
+
+    .cursor {
+      display: inline-block;
+      width: 0.6em;
+      height: 1.2em;
+      background: #ddd;
+      margin-left: 2px;
+      animation: blink 1s steps(2, start) infinite;
+      vertical-align: text-bottom;
+    }
+
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
   </style>
 </head>
 <body>
   <img src="original_starwalker.png"
-    style="position: absolute; bottom:5px; right: 10%; height: 70px"
+    style="position: absolute; bottom:5px; right: 10%; height: 70px; image-rendering: pixelated;"
     onclick="starwalkerClick();">
   <div class="container">
-    <img src="act.webp" alt="Kris act">
+    <img src="battle.webp" alt="Kris act" id="act" onclick="splat();" style="image-rendering: pixelated;">
 
     <div class="text">
-      <span>kris@vx23:~/homepage$ . ݁₊ ⊹ . ݁˖ . ݁</span>
+      <span>kris@vx23:~/homepage$</span><div class="cursor"></div>
       <br>
       <i>rookie coder, chronic gamer, mild procrastinator</i>
       <br><br>
       hi im kris :) im a compsci student at unsw
       <br>
-      ...
+      idk what to write here idk what to
       <br><br>
       <div style="text-align: left;">
         <a href="https://github.com/ge1atin">about</a>
@@ -93,6 +109,14 @@
 <script>
 function starwalkerClick() {
   alert("These Websites are Pissing me off...\nI'm the original    Starwalker");
+}
+
+function splat() {
+  if (document.getElementById('act').src.includes(splat)) {
+    document.getElementById('act').src='battle.webp'
+  } else {
+    document.getElementById('act').src='splat.webp'
+  }
 }
 </script>
 
